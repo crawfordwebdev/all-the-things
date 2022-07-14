@@ -135,7 +135,8 @@ const App = () => {
       name: "Baseball",
       image: "https://imgs.xkcd.com/comics/baseball.png",  
       attributes: ["Stats", "Strategy", "Art in motion", "Competitive"],
-  
+    },
+  ])
   const [patricksThings, setPatricksThings] = useState([
     {
       name: "cats",
