@@ -6,6 +6,8 @@ import FunctionalThings from './pages/FunctionalThings/FunctionalThings'
 import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
 import Landing from './pages/Landing/Landing'
+import CatThings from './pages/CatThings/CatThings'
+import BaseballThings from './pages/'
 
 const App = () => {
   const [shahzadsThings, setShazadsThings] = useState([
@@ -133,6 +135,12 @@ const App = () => {
       name: "Baseball",
       image: "https://imgs.xkcd.com/comics/baseball.png",  
       attributes: ["Stats", "Strategy", "Art in motion", "Competitive"],
+  
+  const [patricksThings, setPatricksThings] = useState([
+    {
+      name: "cats",
+      image: "https://imgs.xkcd.com/comics/cats.png",  
+      attributes: ["cute", "weird"],
     },
   ])
 
@@ -159,6 +167,9 @@ const App = () => {
         <Route
         path="/the-baseball-things"
         element={<BaseballThings things={ryansThings} />}
+      <Route
+        path="/the-cat-things"
+        element={<CatThings things={patricksThings} />}
       />
     </Routes>
   )
