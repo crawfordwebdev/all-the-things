@@ -123,6 +123,27 @@ const App = () => {
       attributes: ['pastry?', 'food?', 'edible?', 'Horrible when toasted!'],
     },
   ])
+  const [eriksThings, setEriksThings] = useState([
+    {
+      name: 'something idk',
+      image:
+        'https://images.unsplash.com/photo-1568051243851-f9b136146e97?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80',
+      attributes: ['tasty', 'fluffy', 'breakfast', 'yummy'],
+    },
+    {
+      name: 'me',
+      image:
+        'https://images.unsplash.com/photo-1538127426967-75a6c73f6d20?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
+      attributes: [
+        '4ft 9',
+        ' not cool',
+        'fun',
+        'animal',
+        "something",
+      ],
+    },
+  ])
+
 
   const [huntersThings, setHuntersThings] = useState([
     {
