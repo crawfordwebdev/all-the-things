@@ -8,7 +8,7 @@ import SillyThings from './pages/SillyThings/SIllyThings'
 import Landing from './pages/Landing/Landing'
 import SleepyThings from './pages/SleepyThings/SleepyThings'
 import CatThings from './pages/CatThings/CatThings'
-import BaseballThings from './pages/'
+import BaseballThings from './pages/BaseballThings/BaseballThings'
 
 const App = () => {
   const [shahzadsThings, setShazadsThings] = useState([
@@ -199,9 +199,10 @@ const App = () => {
         path="/the-silly-things"
         element={<SillyThings things={huntersThings} />}
       />
-        <Route
+      <Route
         path="/the-baseball-things"
         element={<BaseballThings things={ryansThings} />}
+      />
       <Route
         path="/the-cat-things"
         element={<CatThings things={patricksThings} />}
